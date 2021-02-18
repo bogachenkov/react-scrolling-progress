@@ -1,6 +1,6 @@
 {
   "name": "@bogachenkov/rsp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React component (based on HTML `<progress>` element) that shows the progress of the scroll and listens to the target element height changes.",
   "main": "dist/index.js",
   "files": [
