@@ -35,13 +35,13 @@ import React from "react";
 import ReactScrollProgress from "@bogachenkov/rsp";
 
 const MyComponent = () => {
-	...
-	return (
-		<>
-			<ReactScrollProgress />
-			...
-		</>
-	)
+  ...
+  return (
+    <>
+      <ReactScrollProgress />
+      ...
+    </>
+  )
 }
 ```
 
@@ -59,18 +59,18 @@ const MyComponent = () => {
     const targetElementRef = useRef();
     return (
         <div ref={targetElementRef}>
-        	<ReactScrollProgress
-						styles={{
-							position: 'sticky',
-							top: '5px',
-							colors: [ '#845EC2', '#D65DB1', '#FF6F91', '#FF9671', '#FFC75F','#F9F871']
-						}}
-						scrollOptions={{
-							targetElement: ref,
-							detectByElementBottom: true
-						}}
-					/>
-	        ...
+          <ReactScrollProgress
+            styles={{
+              position: 'sticky',
+              top: '5px',
+              colors: [ '#845EC2', '#D65DB1', '#FF6F91', '#FF9671', '#FFC75F','#F9F871']
+            }}
+            scrollOptions={{
+              targetElement: ref,
+              detectByElementBottom: true
+            }}
+          />
+          ...
         </div>
     )
 }
@@ -93,11 +93,11 @@ const MyComponent = () => {
       useTargetElement: true
     });
     return (
-			<div ref={targetElement}>
-				<CustomScrollBar value={progressNumber} />
-				... // OR
-				<div style={{width: progressString}}></div>
-			</div>
+      <div ref={targetElement}>
+        <CustomScrollBar value={progressNumber} />
+        ... // OR
+        <div style={{width: progressString}}></div>
+      </div>
     )
 }
 ```
@@ -116,11 +116,11 @@ const MyComponent = () => {
       targetElement: targetElementRef
     });
     return (
-			<div ref={targetElementRef}>
-				<CustomScrollBar value={progressNumber} />
-				... // OR
-				<div style={{width: progressString}}></div>
-			</div>
+      <div ref={targetElementRef}>
+        <CustomScrollBar value={progressNumber} />
+        ... // OR
+        <div style={{width: progressString}}></div>
+      </div>
     )
 }
 ```
