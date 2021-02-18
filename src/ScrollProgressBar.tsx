@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useScrollProgress } from './useScrollProgress';
 
 const DEFAULT_STYLES = {
@@ -42,6 +42,13 @@ const ScrollProgressBar:React.FC<ScrollProgressBarProps> = ({ scrollOptions, sty
     showStripes = DEFAULT_STYLES.SHOW_STRIPES,
     showBarShadow = DEFAULT_STYLES.SHOW_BAR_SHADOW
   } = styles;
+
+  const gradient = useMemo(() => {
+    if (colors.length === 0) return DEFAULT_STYLES.COLORS;
+    if (colors.length === 1) return [...colors, ...colors];
+    return colors;
+  }, [colors]);
+
   return (
     <>
       <progress max="100" value={progressNumber} />
@@ -85,14 +92,14 @@ const ScrollProgressBar:React.FC<ScrollProgressBarProps> = ({ scrollOptions, sty
         progress[value]::-webkit-progress-value {
           background-image:
             ${showStripes ? '-webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, .08) 33%, rgba(0,0, 0, .08) 66%, transparent 66%),' : ''}
-            -webkit-linear-gradient(left, ${colors.length > 0 ? colors.join(', ') : DEFAULT_STYLES.COLORS});
+            -webkit-linear-gradient(left, ${gradient.join(', ')});
             background-size: ${showStripes ? '40px 24px,' : ''} 100% 100%;
         };
 
         progress[value]::-moz-progress-bar {
           background-image:
             ${showStripes ? '-moz-linear-gradient(135deg, transparent 33%, rgba(0, 0, 0, .08) 33%, rgba(0,0, 0, .08) 66%, transparent 66%),' : ''}
-            -moz-linear-gradient(left, ${colors.length > 0 ? colors.join(', ') : DEFAULT_STYLES.COLORS});
+            -moz-linear-gradient(left, ${gradient.join(', ')});
             background-size: ${showStripes ? '40px 24px,' : ''} 100% 100%;
         }
       `}</style>
