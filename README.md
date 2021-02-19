@@ -181,5 +181,5 @@ const { progressString, progressNumber, targetElement? } = useScrollProgress(opt
 | :--------------: | :---------------------------------: | :----------------------------------------------------------: |
 | `progressString` |              `string`               |   The progress value represented by a string like `'100%'`   |
 | `progressNumber` |              `number`               |                      The progress value                      |
-| `targetElement`  | `MutableRefObject<any> | undefined` | A ref that needs to be assigned to the element you want to track. It will returns only if you passed `useTargetElement` key to `options` object. |
+| `targetElement`  | `MutableRefObject<any> \| undefined` | A ref that needs to be assigned to the element you want to track. It will returns only if you passed `useTargetElement` key to `options` object. |
 
