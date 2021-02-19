@@ -1,5 +1,10 @@
 {
   "name": "@bogachenkov/rsp",
+  "homepage": "https://github.com/bogachenkov/react-scroll-progress",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bogachenkov/react-scroll-progress.git"
+  },
   "version": "1.0.2",
   "description": "React component (based on HTML `<progress>` element) that shows the progress of the scroll and listens to the target element height changes.",
   "main": "dist/index.js",
