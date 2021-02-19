@@ -5,7 +5,7 @@
     "type": "git",
     "url": "https://github.com/bogachenkov/react-scroll-progress.git"
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React component (based on HTML `<progress>` element) that shows the progress of the scroll and listens to the target element height changes.",
   "main": "dist/index.js",
   "files": [
