@@ -32,7 +32,7 @@ By default it will be tracking for `document.documentElement` scroll progress.
 
 ```jsx
 import React from "react";
-import ReactScrollProgress from "@bogachenkov/rsp";
+import ReactScrollProgress from "@bogachenkov/react-scrolling-progress";
 
 const MyComponent = () => {
   ...
@@ -53,7 +53,7 @@ const MyComponent = () => {
 
 ```jsx
 import React, { useRef } from "react";
-import ReactScrollProgress from "@bogachenkov/rsp";
+import ReactScrollProgress from "@bogachenkov/react-scrolling-progress";
 
 const MyComponent = () => {
     const targetElementRef = useRef();
@@ -84,7 +84,7 @@ const MyComponent = () => {
 
 ```jsx
 import React from "react";
-import { useScrollProgress } from "@bogachenkov/rsp";
+import { useScrollProgress } from "@bogachenkov/react-scrolling-progress";
 
 const MyComponent = () => {
     const { targetElement, progressNumber, progressString } = useScrollProgress({
@@ -106,7 +106,7 @@ Also you can use `targetElement` instead of `useTargetElement`  and passed your 
 
 ```jsx
 import React, { useRef } from "react";
-import { useScrollProgress } from "@bogachenkov/rsp";
+import { useScrollProgress } from "@bogachenkov/react-scrolling-progress";
 
 const MyComponent = () => {
     const targetElementRef = useRef();
