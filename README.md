@@ -5,13 +5,13 @@ React component (based on HTML `<progress>` element)  that shows the progress of
 ## Installation
 
 ```
-npm install @bogachenkov/rsp
+npm install @bogachenkov/react-scrolling-progress
 ```
 
 or
 
 ```
-yarn add @bogachenkov/rsp
+yarn add @bogachenkov/react-scrolling-progress
 ```
 
 
