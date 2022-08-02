@@ -6,11 +6,9 @@
   {' '}
   <img src="https://badgen.net/npm/dt/@bogachenkov/react-scrolling-progress" />
   {' '}
+  <img src="https://badgen.net/packagephobia/install/@bogachenkov/react-scrolling-progress/" />
+  {' '}
   <img src="https://badgen.net/npm/dependents/@bogachenkov/react-scrolling-progress" />
-  {' '}
-  <img src="https://badgen.net/npm/types/@bogachenkov/react-scrolling-progress" />
-  {' '}
-  <img src="https://badgen.net/packagephobia/install/@bogachenkov/react-scrolling-progress" />
 </p>
 
 React component (based on HTML `<progress>` element)  that shows the progress of  the scroll and listens to the target element height changes. It also returns `useScrollProgress` hook in case you want to use your own progress bar.
