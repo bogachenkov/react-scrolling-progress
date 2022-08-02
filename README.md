@@ -1,13 +1,9 @@
 # React Scrolling Progress
 <p align="center">
   <img src="https://badgen.net/npm/license/@bogachenkov/react-scrolling-progress" />
-  {' '}
   <img src="https://badgen.net/npm/v/@bogachenkov/react-scrolling-progress" />
-  {' '}
   <img src="https://badgen.net/npm/dt/@bogachenkov/react-scrolling-progress" />
-  {' '}
   <img src="https://badgen.net/packagephobia/install/@bogachenkov/react-scrolling-progress/" />
-  {' '}
   <img src="https://badgen.net/npm/dependents/@bogachenkov/react-scrolling-progress" />
 </p>
 
